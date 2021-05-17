@@ -12,6 +12,7 @@ public class Loan {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long loanNo;
+	private int age;
 	private String loanType;
 	private Long loanAmount;
 	private String loanTenure;
@@ -24,6 +25,7 @@ public class Loan {
 
 	public void setLoanNo(Long loanNo) {
 		this.loanNo = loanNo;
+		
 	}
 
 	public String getLoanType() {
